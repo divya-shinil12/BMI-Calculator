@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/headerbanner.jpg" width="100%">
+        <div class="main-container">
+            <form class="form-body">
+                <h3>BMI Calculator</h3>
+                <div class="form-group" id="bg-fill">
+                    <label for="salutation-value">Salutation</label>
+                    <select id="salutation-value" onchange="markGender(this)" required>
+                        <option value="">Select</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Prof">Prof</option>
+                    </select> 
+                </div>
+
+                <div class="form-group" id="bg-fill">
+                    <label>Gender:</label>
+                    <select id="gender" disabled="">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <!--<label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>-->
+                </div>
+
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" maxlength="150" required>
+                </div>
+
+                <div class="form-group" id="bg-fill">
+                    <label for="initial-name">Initial</label>
+                    <input type="text" id="initial-name" maxlength="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="address-name">Adress</label>
+                    <textarea rows="3" cols="20" id="address-name"></textarea>
+                </div>
+
+                <div class="form-group" id="bg-fill">
+                    <label for="age">Age</label>
+                    <input type="text" id="age-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="height-value">Height in centimeter</label>
+                    <input type="text" id="height-value" required>
+                </div>
+
+                <div class="form-group" id="bg-fill">
+                    <label for="weight-value">Weight in kilogram</label>
+                    <input type="text" id="weight-value" required>
+                </div>
+
+                <div class="bmiCalSection">
+                <div class="form-group">
+                    <label for="bmi-value">Body mass index (BMI)</label>
+                    <input type="text" id="bmi-value" readonly>
+                </div>
+                
+                <div class="form-group" id="bg-fill">
+                    <label for="description">Description</label>
+                    <textarea rows="3" cols="20" id="description" readonly></textarea>
+                </div>
+            </div>
+            <div class="btn-div">
+                <button type="button" id="calButton" onclick="calculateBMI()">Calculate BMI</button>
+                <button type="reset" id="calButton">Clear</button>
+            </div>
+            </form>
+        </div>
+        <div id="footer"></div>                    
+    </div>   
+</body>
+</html>
