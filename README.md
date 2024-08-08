@@ -10,7 +10,7 @@ Explanation of code:
 2. CSS (`styles.css`) : Styles the calculator for a clean, user-friendly interface.
 3. JavaScript (`scripts.js`) : Handles the form submission, calculates the BMI, determines the BMI category and finally displaying the result.
 
-🔍 Key Features:
+**Key Features:**
 1. **User-input :**  An easy-to-use BMI calculator that allows you to enter your personal details such as Salutation, Full name, Age, Height (in centimeters), weight (in kilogram). 
 2. **BMI Calculation :** The application computes BMI using the formula: BMI = weight (kg) / (height (m) * height (m)) and the resulting value is then presented to the user.
 3. **BMI Category :** Get instant feedback on your BMI category to see if you are underweight, normal weight, overweight, or obese.
